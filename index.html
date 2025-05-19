@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>House Mate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow fixed top-0 left-0 w-full z-50">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-2 h-16">
+    <div class="flex items-center space-x-2">
+    <img src="images/WhatsApp_Image_2025-05-17_at_19.18.08-removebg-preview.png" alt="logo" class="h-12 w-auto ">
+    <h1 class="font-bold text-lg text-blue-700">House Mate</h1>
+    </div>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#services" class="text-gray-700 hover:text-blue-600">Services</a>
+      <a href="#why" class="text-gray-700 hover:text-blue-600">Why Us</a>
+      <a href="#testimonials" class="text-gray-700 hover:text-blue-600">Testimonials</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+    <a href="#services" class="block py-2 text-blue-700 hover:text-blue-600">Services</a>
+    <a href="#why" class="block py-2 text-blue-700 hover:text-blue-600">Why Us</a>
+    <a href="#testimonials" class="block py-2 text-blue-700 hover:text-blue-600">Testimonials</a>
+    <a href="#contact" class="block py-2 text-blue-700 hover:text-blue-600">Contact</a>
+  </div>
+</header>
+
+  <main class="pt-24">
+
+    <!-- Hero -->
+    <section class="bg-blue-50 py-20 px-6 text-center" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-bold text-blue-700">Reliable House Care, Anytime You Need It.</h1>
+      <p class="mt-4 text-lg text-gray-600">From repainting to repairs, Housemate keeps your home in top shape.</p>
+      <a href="#contact" class="mt-6 inline-block bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700 transition">Book a Service</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10 text-blue-700" data-aos="fade-right">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow p-6 rounded" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-2">Repainting & Touch-ups</h3>
+          <p>Give your home a new look with professional painting.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-bold mb-2">Plumbing & Electrical</h3>
+          <p>Trusted pros to fix leaks, faults, and connections.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-bold mb-2">Cleaning & Fumigation</h3>
+          <p>Make your space spotless and pest-free.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-xl font-bold mb-2">Furniture Assembly</h3>
+          <p>Quick setup and fixing of household furniture.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-xl font-bold mb-2">Home Renovation</h3>
+          <p>Small or big upgrades — we do it all!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why" class="bg-gray-100 py-16 px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center text-blue-700 mb-10 ">Why Choose House Mate?</h2>
+      <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Trusted Professionals</h3>
+          <p>Verified, skilled service providers.</p>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Affordable Pricing</h3>
+          <p>Transparent and fair pricing.</p>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Fast Booking</h3>
+          <p>Book in minutes, get service quickly.</p>
+        </div>
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Satisfaction Guaranteed</h3>
+          <p>We’ll make it right, always.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">What Clients Say</h2>
+      <div class="space-y-6">
+        <blockquote class="bg-white p-6 rounded shadow">
+          <p class="italic">“Excellent repainting service! I’ll use House Mate again.”</p>
+          <footer class="mt-2 text-right text-sm font-medium">– Ada E.</footer>
+        </blockquote>
+        <blockquote class="bg-white p-6 rounded shadow">
+          <p class="italic">“Fast, reliable, and affordable. Highly recommend!”</p>
+          <footer class="mt-2 text-right text-sm font-medium">– Seyi M.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="bg-blue-600 py-14 text-white text-center" data-aos="fade-up">
+      <h2 class="text-2xl md:text-3xl font-bold">Ready to refresh your home?</h2>
+      <p class="mt-2 text-lg">Book a service or chat with our support.</p>
+      <a href="https://wa.me/234XXXXXXXXXX" class="mt-6 inline-block bg-white text-blue-600 py-3 px-6 rounded hover:bg-gray-100 transition">Chat on WhatsApp</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+    <p>&copy; 2025 House Mate, Powered By NedonGroup. All rights reserved.</p>
+    <p>Email: housemate@example.com | Phone: +234-XXX-XXX-XXXX</p>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Mobile toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
